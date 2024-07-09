@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt Message</title>
+    <link rel="stylesheet" href="static/static/styless.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encrypt a Message</h1>
+        <form action="{{ url_for('sent_encrypted_message') }}" method="POST">
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Encrypt and Send</button>
+        </form>
+    </div>
+</body>
+</html>

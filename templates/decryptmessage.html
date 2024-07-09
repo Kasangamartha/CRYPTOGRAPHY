@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt Message</title>
+    <link rel="stylesheet" href="static/static/styless.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decrypt a Message</h1>
+        <form action="{{ url_for('decrypt_message_route') }}" method="POST">
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp" required>
+            <br>
+            <label for="encrypted_message">Encrypted Message:</label>
+            <textarea id="encrypted_message" name="encrypted_message" required></textarea>
+            <br>
+            <button type="submit">Decrypt</button>
+        </form>
+    </div>
+</body>
+</html>

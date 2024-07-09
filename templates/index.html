@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt/Decrypt Messages</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encrypt/Decrypt Messages</h1>
+        
+        <div id="encrypt-section" class="section">
+            <h2>Encrypt Message</h2>
+            <input type="text" id="message" placeholder="Enter message to encrypt">
+            <input type="text" id="phone_number" placeholder="Enter phone number">
+            <button onclick="encryptMessage()">Encrypt</button>
+            <p id="encrypted-message"></p>
+        </div>
+        
+        <div id="decrypt-section" class="section">
+            <h2>Decrypt Message</h2>
+            <input type="text" id="encrypted_message" placeholder="Enter encrypted message">
+            <input type="text" id="key" placeholder="Enter encryption key">
+            <button onclick="decryptMessage()">Decrypt</button>
+            <p id="decrypted-message"></p>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
